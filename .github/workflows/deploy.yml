@@ -52,6 +52,6 @@ jobs:
         uses: aws-actions/amazon-ecs-deploy-task-definition@v1
         with:
           task-definition: ${{ steps.taskdef.outputs.task-definition }}
-          service: myapp-service
+          service: TaskDefinition-ecs-demo-service-eu00wkm9
           cluster: supportive-fish-qa9pi1
           wait-for-service-stability: true
